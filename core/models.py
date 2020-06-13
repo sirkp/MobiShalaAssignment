@@ -20,6 +20,8 @@ class Rating(models.Model):
         try:
             product = Product.objects.get(id=self.product.id)
             ratings_list = list(product.product_ratings.all().values_list('rating', flat=True))
+            rating = round(float((sum(ratings_list)+self.rating)/(len(ratings_list)+1)), 3)
+            product.rating = rating
             product.save()
         except Exception as e:
             raise e    
