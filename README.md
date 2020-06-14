@@ -1,5 +1,5 @@
 # MobishalaAssignment
-An api for user login, register, product list and product rating endpoint. **TokenAuthentication** is used for authenticaton. **Sqlite 3.31** is used as database.
+**TokenAuthentication** is used for authenticaton. **Sqlite 3.31** is used as database.
 
 ### Frameworks used
 - django 3.0
